@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "fontQon";
+  src: url("./assets/fonts/Qonquer.ttf");
+}
+@font-face {
+  font-family: "agencyFb";
+  src: url("./assets/fonts/AgencyFB-Bold.ttf");
+}
+
+body {
+  background-image: url('./assets/img/backgroud.jpeg');
+  background-size: cover;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.title {
+  font-family: fontQon;
+  font-size: 100px;
+  color: #fb9f1d;
+  text-shadow: 6px 6px #c20f08;
+  letter-spacing: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+.container-title > p {
+  font-family: agencyFb;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/*-------------------------------*/
+
+.background-game {
+  background-color: #3da38d;
+  border-radius: 15px;
+  border: 4px solid black;
+  border-radius: 10px 10px;
+}
+.container-game {
+  background-color: #cea567;
+  border: 2px solid black;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+img {
+  height: 100px;
+}
+.btn-user {
+  box-shadow: 3px 4px 4px #dc421c;
+  border: 3px solid black;
+  border-radius: 255px 15px 225px 15px/15px 225px 20px 255px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.btn-user:hover {
+  border: solid 3px black;
+  background-color: #424436;
+}
+.background-pc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 130px;
+  background-color: #424436;
+  box-shadow: 3px 4px 4px #dc421c;
+  border: 3px solid black;
+  border-radius: 255px 15px 225px 15px/15px 225px 20px 255px;
+}
+
+/*--------------------------------------*/
+.title-h2 {
+  font-size: 39px;
+  font-family: agencyFb;
+  margin: 10px;
+}
+
+.container-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.background-result {
+  background-color: #b17340;
+  border: 3px solid black;
+  border-radius: 10px 10px;
+}
+.title-result {
+  background-color: #cea567;
+  font-family: agencyFb;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  text-align: center;
+  word-spacing: 1px;
+}
+.disabled {
+  display: none;
+}
+/* ----------------------- */
+
+.btn-reset {
+  cursor: pointer;
+  background-color: #fb9f1d;
+  border: 3px solid black;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  width: 150px;
+  font-size: 20px;
+  padding: 4px;
+  font-family: agencyFb;
+}
+.paragraph {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.score {
+  font-size: 18px;
+}
+.result {
+  padding: 10px;
+}
+.choose-result {
+  text-transform: uppercase;
+  background-color: #fb9f1d;
+  border: 0.5px solid black;
+  font-size: 16px;
+  padding: 2px;
+}
+
+#winner-container {
+  background-color: #dc421c;
+  padding: 5px;
+}
+
+/*---------------------*/
+footer {
+  text-align: center;
+  font-family: agencyFb;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.link{  
+  color: #fb9f1d;
+  text-shadow: 2px 2px #c20f08;
+  font-family: fontQon;
+  text-decoration: none;
+}

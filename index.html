@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="./src/app.js" defer></script>
+    <title>Rock, Paper & Scissors</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-title">
+        <h1 class="title">"ROCK, PAPER & SCISSORS"</h1>
+        <p>¡¡Let proof your LUCK!!</p>
+      </div>
+    </header>
+    <main>
+      <div class="background-game">
+        <div class="container-game">
+          <h2 class="title-h2">CHOOSE:</h2>
+          <div class="btn-container">
+            <button class="btn-user" id="Paper">
+              <img src="./src/assets/img/Paper.png" />
+            </button>
+            <button class="btn-user" id="Rock">
+              <img src="./src/assets/img/Rock.png" />
+            </button>
+            <button class="btn-user" id="Scissors">
+              <img src="./src/assets/img/Scissors.png" />
+            </button>
+          </div>
+          <h2 class="title-h2">COMPUTER:</h2>
+          <div class="background-pc">
+            <img id="pc-pic" src="./src/assets/img/Rock.png" />
+          </div>
+        </div>
+      </div>
+      <div class="container-result">
+        <div class="background-result">
+          <div class="title-result">
+            <h2 class="title-h2">THE BEST OF 5</h2>
+            <div class="score">
+              <span>User <span id="point-user">0</span></span>
+              <span>-</span>
+              <span>Computer <span id="point-computer">0</span></span>
+            </div>
+            <div class="result disabled" id="results">
+              <p class="paragraph">
+                You choose <span class="choose-result" id="choose-user"></span>
+              </p>
+              <p class="paragraph">
+                The computer choose
+                <span class="choose-result" id="choose-pc"></span>
+              </p>
+            </div>
+            <div id="winner-container" class="disabled">
+              <p id="winner" class="disabled"></p>
+            </div>
+          </div>
+        </div>
+        <div class="container-reset-btn">
+          <button id="reset-btn" class="btn-reset">reset game.</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Made by abraham56 inspirated in <a class="link" href="https://www.imdb.com/title/tt14230388/" target="_blank" rel="noreferrer" rel="noopener">"ASTEROID CITY"</a></p>
+    </footer>
+  </body>
+</html>
