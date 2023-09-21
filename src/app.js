@@ -76,15 +76,15 @@ const startRound = (e) => {
   userChoose.innerHTML = userChoice;
   pcChoose.innerHTML = computerChoice;
   if (
-    (userChoice == "Rock" && computerChoice == "Scissor") ||
-    (userChoice == "Scissor" && computerChoice == "Paper") ||
+    (userChoice == "Rock" && computerChoice == "Scissors") ||
+    (userChoice == "Scissors" && computerChoice == "Paper") ||
     (userChoice == "Paper" && computerChoice == "Rock")
   ) {
     userWin();
   }
   if (
-    (computerChoice == "Rock" && userChoice == "Scissor") ||
-    (computerChoice == "Scissor" && userChoice == "Paper") ||
+    (computerChoice == "Rock" && userChoice == "Scissors") ||
+    (computerChoice == "Scissors" && userChoice == "Paper") ||
     (computerChoice == "Paper" && userChoice == "Rock")
   ) {
     computerWin();
